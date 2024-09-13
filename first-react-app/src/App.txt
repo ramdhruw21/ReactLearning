@@ -1,0 +1,23 @@
+
+import RDButton from "./RDButton" // import single components
+//import {RDButton} from "./RDButton" // import multiple files 
+import Hello from "./Hello";
+// functional components
+ 
+function App(){
+
+
+     
+      let myname = 'Ramji Dhruw';
+
+      let fullName = () => {
+            return 'Ram Dhruw';
+      }
+      return <div>
+                <h1 style= {{'background-color': '#777345'}} > Hello World i am {fullName()} </h1>
+             <RDButton></RDButton>
+             <Hello></Hello>
+             </div> 
+}
+
+export default App;
